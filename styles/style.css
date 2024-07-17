@@ -102,6 +102,10 @@ header {
     font-weight: 600;
     border: none;
     cursor: pointer;
+    transition: all .3s ease-in;
+}
+.banner-btn:hover {
+    background-color: #b7402e;
 }
 .banner-btn2 {
     background-color: rgba(255, 255, 255, 0);
@@ -112,8 +116,12 @@ header {
     font-weight: 600;
     border: 1px solid white;
     cursor: pointer;
+    transition: all .3s ease-in;
 }
-
+.banner-btn2:hover {
+    background-color: #b7402e;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
 .banner-img-container {
     position: relative;
     max-height: 580px;
@@ -186,6 +194,7 @@ header {
         max-width: 90%;
         padding-top: 52px;
         align-items: center;
+        margin-bottom: 51px;
     }
     .nav-menu {
         display: inline;
@@ -197,18 +206,19 @@ header {
     .banner-container {
         max-width: 90%;
         flex-direction: column;
+        gap: 48px;
     }
     .banner-txt-container {
         width: 100%;
     }
     .banner-title {
         font-size: 2.25rem;
-        width: 70%;
+        width: 50%;
         margin-bottom: 28px;
     }
     .banner-txt {
         font-size: 1rem;
-        width: 70%;
+        width: 60%;
     }
 
     .banner-img-container {
