@@ -533,4 +533,30 @@ header {
     .section3-img img {
         max-width: 100%;
     }
+
+    /* Section 4 */
+    .section4 {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+    .section4-title {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 14px;
+    }
+    .section4-txt {
+        max-width: 100%;
+    }
+    .display-none {
+        display: none;
+    }
+    .section4-exc1, .section4-exc2, .section4-exc4, .section4-exc5 {
+        font-size: 0.7rem;
+    }
+    .section4-img-row1 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .section4-img-row2 {
+        grid-template-columns: 0.45fr 0.55fr;
+    }
 }
