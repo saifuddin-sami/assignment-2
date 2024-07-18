@@ -275,9 +275,16 @@ header {
 .section3-btn:hover {
     background-color: #b7402e;
 }
+
 .section3-img img {
     max-width: 386px;
     border-radius: 18px;
+}
+.section3-img2 {
+    display: none;
+}
+.section3-img-small {
+    display: none;
 }
 .section3-img img:hover {
     filter: contrast(80%);
@@ -530,8 +537,16 @@ header {
     .section3-txt {
         margin-bottom: 24px;
     }
-    .section3-img img {
+    .section3-img2 {
+        display: flex;
+        justify-content: center;
+    }
+    .section3-img2 img {
         max-width: 100%;
+        border-radius: 18px;
+    }
+    .section3-img {
+        display: none;
     }
 
     /* Section 4 */
