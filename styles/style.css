@@ -14,7 +14,6 @@ body {
     color: white;
     max-width: 1440px;
     margin: 0 auto;
-    border: 2px solid;
 }
 
 /* Header Section */
@@ -75,10 +74,12 @@ header {
     margin: 32px auto 0;
     display: flex;
     justify-content: space-around;
-    gap: 87px;
+    /* align-items: center; */
+    gap: 97px;
 }
 .banner-txt-container {
-    width: 50%; 
+    margin-top: 30px;
+    width: 45%; 
 }
 .banner-title {
     font-size: 4.8rem;
@@ -458,6 +459,7 @@ header {
     width: 310px;
     height: 216px;
     border-collapse: collapse;
+    text-align: left;
 }
 td, th {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -561,21 +563,20 @@ select:focus {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     padding: 20px;
     position: relative;
 }
-.section6-box-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 272px;
-    gap: 20px; 
+.section6-box-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .section6-box {
     position: relative;
+    height: 272px;
 }
 .section6-box img {
     width: 100%;
@@ -631,11 +632,12 @@ select:focus {
     }
     /* Banner */
     .banner-container {
-        max-width: 90%;
+        max-width: 100%;
         flex-direction: column;
     }
     .banner-txt-container {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
     .banner-title {
         font-size: 2.25rem;
@@ -691,11 +693,12 @@ select:focus {
 
     /* Section 2 */
     .section2 {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto 66px;
     }
     .section2-txt-container {
-        max-width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
         margin-bottom: 58px;
         position: relative;
         top: -80px;
@@ -718,12 +721,13 @@ select:focus {
     /* Section 3 */
     .section3 {
         max-width: 90%;
+        margin: 0 auto;
         padding: 31px 33px 35px;
         flex-direction: column;
         margin-bottom: 66px;
     }
     .section3-txt-container {
-        max-width: 100%;
+        max-width: 90%;
         margin-bottom: 31px;
     }
     .section3-title {
@@ -748,6 +752,7 @@ select:focus {
     /* Section 4 */
     .section4 {
         max-width: 90%;
+        margin: 0 auto;
         margin-bottom: 30px;
     }
     .section4-title {
@@ -756,7 +761,7 @@ select:focus {
         margin-bottom: 14px;
     }
     .section4-txt {
-        max-width: 100%;
+        max-width: 90%;
     }
     .display-none {
         display: none;
@@ -777,7 +782,6 @@ select:focus {
     }
     .section5-txt-container {
         max-width: 90%;
-        /* max-height: fit-content; */
         margin-top: 30px;
         margin-bottom: 32px;
     }
@@ -790,8 +794,8 @@ select:focus {
         gap: 42px;
     }
     .section5-chart {
-        max-width: 100%;
-        margin-left: 20px;
+        max-width: 90%;
+        margin: 0 30px;
         align-items: start;
     }
     .section5-chart-title {
@@ -800,11 +804,12 @@ select:focus {
     }
 
     .section5-calculate {
-        max-width: 100%;
-        margin: 0 20px;
+        max-width: 90%;
+        margin: 0 30px;
     }
     .section5-calculate-txt-container {
         max-width: 90%;
+        margin-bottom: 10px;
     }
     .section5-calculate-title {
         font-size: 1rem;
@@ -844,12 +849,9 @@ select:focus {
         max-width: 90%;
         margin: 0 auto;
         height: fit-content;
+        grid-template-columns: 1fr;
     }
     .section6-box img {
         height: 272px;
-    }
-    .section6-box-row {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
     }
 }
