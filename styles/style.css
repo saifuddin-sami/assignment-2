@@ -717,11 +717,16 @@ select:focus {
     justify-content: space-around;
     align-items: center;
 }
+.section8-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .section8-form-title {
     margin-bottom: 25px;
     font-size: 2rem;
+    font-weight: 600;
     color: white;
-    text-align: center;
 }
 .section8-form {
     width: 115%;
@@ -772,6 +777,7 @@ select:focus {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .section8-img-container {
     max-width: 50%;
@@ -1114,12 +1120,53 @@ footer hr {
     .section7-txt-container {
         max-width: 90%;
     }
+    .section7-title {
+        font-size: 2.4rem;
+    }
+    .section7-txt {
+        font-size: 0.78rem;
+    }
     .section7-box-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         row-gap: 50px;
     }
-
+    .section7-box:hover {
+        box-shadow: 1px 1px 15px 0 rgba(255, 255, 255, 0.20);
+    }
+    /* Section 8 */
+    .section8 {
+        max-width: 90%;
+    }
+    .section8-txt-container {
+        max-width: 100%;
+    }
+    .section8-title {
+        font-size: 2.4rem;
+    }
+    .section8-txt {
+        font-size: 0.78rem;
+    }
+    .section8-item-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section8-img-container {
+        max-width: 90%;
+    }
+    .section8-form {
+        max-width: 100%;
+    }
+    .section8 {
+        margin-bottom: 66px;
+    }
+    .section8-txt-container {
+        margin-bottom: 40px;
+    }
+    .section8-form-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
     /* Footer Section */
     footer {
         padding: 44px 20px 57px;
