@@ -79,7 +79,7 @@ header {
 }
 .banner-txt-container {
     margin-top: 30px;
-    width: 50%; 
+    max-width: 50%; 
 }
 .banner-title {
     font-size: 4.8rem;
@@ -482,8 +482,9 @@ th {
     justify-content: center;
     gap: 12px;
 }
-.margin-right {
-    margin-right: 6px;
+.section5-calculate-row {
+    display: flex;
+    gap: 12px;
 }
 .section5-calculate-txt-container {
     margin-bottom: 34px;
@@ -517,6 +518,12 @@ th {
     border-radius: 8px;
     padding: 13px 20px;
     border: none;
+}
+.section5-calculate input::placeholder {
+    color: rgba(255, 255, 255, 0.6);;
+}
+.section5-calculate option {
+    color: rgba(0, 0, 0, 0.7);
 }
 input:focus {
     outline: none;
@@ -867,7 +874,7 @@ footer hr {
 
 
 
-/* Small Screen Or Devices */
+/* Small Screen Or Mobile Devices */
 @media screen and (max-width: 576px) {
     header {
         background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
@@ -1077,7 +1084,7 @@ footer hr {
         font-size: 0.78rem;
     }
     .section5-input {
-        max-width: 44%;
+        max-width: calc(45% - 12px / 2);
         max-height: 48px;
         padding: 13px 20px;
         font-size: 1rem;
