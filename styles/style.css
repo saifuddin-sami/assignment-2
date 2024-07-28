@@ -127,8 +127,8 @@ header {
     transition: all .3s ease-in;
 }
 .banner-btn2:hover {
-    background-color: #b7402e;
-    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: white;
+    color: #e6533c;
 }
 .banner-img-container {
     position: relative;
@@ -639,7 +639,7 @@ select:focus {
     padding: 30px 0;
 }
 .section7-box:hover {
-    box-shadow: 1px 1px 30px 0 rgba(255, 255, 255, 0.10);
+    box-shadow: 1px 1px 30px 0 rgba(255, 255, 255, 0.15);
     cursor: pointer;
 }
 .section7-box-subtitle {
@@ -693,6 +693,107 @@ select:focus {
     background-color: #b7402e;
 }
 
+/* Section 8 (Form) */
+.section8 {
+    max-width: 75%;
+    margin: 0 auto 100px;
+}
+.section8-txt-container {
+    max-width: 60%;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+.section8-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+.section8-txt {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.section8-item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section8-form-title {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.section8-form {
+    width: 115%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section8-form > input , .section8-form select {
+    background-color: white;
+    border: none; 
+    font-size: 1.25rem;
+    padding: 20px;
+    border-radius: 16px;
+}
+.section8-form > input::placeholder , .section8-form select {
+    color: #5c5c5c;
+}
+.section8-form-btn {
+    background-color: rgba(230, 83, 60, 1);
+    color: white;
+    border-radius: 42px;
+    padding: 16px 46px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.section8-form-btn:hover {
+    background-color: #b7402e;
+}
+.section8-form-reset {
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 42px;
+    padding: 16px 46px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.section8-form-reset:hover {
+    background-color: white;
+    color: #e6533c;
+}
+.section8-form-btn-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.section8-img-container {
+    max-width: 50%;
+    border-radius: 16px;
+    position: relative;
+}
+.section8-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(122, 29, 0, 0.11);
+    z-index: 1;
+    border-radius: 16px;
+}
+.section8-img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+.section8-img-overlay:hover {
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
 
 /* Footer Section */
 footer {
