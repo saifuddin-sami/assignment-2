@@ -1304,6 +1304,7 @@ footer hr {
     .section5-txt-container {
         max-width: 80%;
         margin-bottom: 40px;
+        text-align: center;
     }
     .section5-container {
         flex-direction: column;
@@ -1461,6 +1462,7 @@ footer hr {
     .section5-txt-container {
         max-width: 85%;
         margin-bottom: 40px;
+        text-align: center;
     }
     .section5-container {
         flex-direction: column;
