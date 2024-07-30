@@ -640,10 +640,12 @@ select:focus {
 .section7-box {
     background-color: rgb(34, 34, 34);
     border-radius: 20px;
-    padding: 30px 0;
+    padding: 35px 0 30px;
+    border: 2.5px solid black;
 }
 .section7-box:hover {
-    box-shadow: 1px 1px 25px 0 rgba(255, 255, 255, 0.15);
+    border: 2.5px solid rgb(230, 83, 60);
+    box-shadow: 0 0 25px 0 rgb(230, 83, 60);
     cursor: pointer;
 }
 .section7-box-subtitle {
@@ -669,7 +671,7 @@ select:focus {
 }
 .section7-box-item-container {
     max-width: 80%;
-    height: 350px;
+    height: 380px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1141,7 +1143,7 @@ footer hr {
         row-gap: 50px;
     }
     .section7-box:hover {
-        box-shadow: 1px 1px 15px 0 rgba(255, 255, 255, 0.20);
+        box-shadow: 1px 1px 20px 0 rgb(230, 83, 60);
     }
     /* Section 8 */
     .section8 {
@@ -1365,11 +1367,24 @@ footer hr {
     .section6-img-container {
         max-width: 100%;
     }
+    /* Section 7 */
+    .section7 {
+        max-width: 90%;
+        margin: 0 auto 80px;
+    }
+    .section7-txt-container {
+        max-width: 80%;
+        margin-bottom: 40px;
+    }
+    .section7-box-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
 
 
 
 
-    .section7 , .section8 , .footer-container , .footer-small-txt {
+    .section8 , .footer-container , .footer-small-txt {
         display: none;
     }
 }
@@ -1516,15 +1531,28 @@ footer hr {
         margin: 0 auto 90px;
     }
     .section6-txt-container {
-        max-width: 85%;
+        max-width: 80%;
         margin-bottom: 50px;
     }
     .section6-img-container {
         max-width: 100%;
     }
+    /* Section 7 */
+    .section7 {
+        max-width: 85%;
+        margin: 0 auto 90px;
+    }
+    .section7-txt-container {
+        max-width: 80%;
+        margin-bottom: 50px;
+    }
+    .section7-box-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
 
 
-    .section7 , .section8 , .footer-container , .footer-small-txt {
+    .section8 , .footer-container , .footer-small-txt {
         display: none;
     }
 }
