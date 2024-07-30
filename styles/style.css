@@ -218,6 +218,8 @@ header {
 .section2-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .section2-box img {
     border-radius: 50%;
